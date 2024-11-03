@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Maui.Views.ListadoNotaSalidaPage"
+             Title="Listado Nota Salida">
+    <ContentPage.Resources>
+        <Style TargetType="Label" x:Key="ItemLabelStyle">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="5,0" />
+        </Style>
+        <Style TargetType="Entry" x:Key="SearchEntryStyle">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="10,5" />
+            <Setter Property="Placeholder" Value="Buscar Productos" />
+        </Style>
+        <Style TargetType="Picker" x:Key="SearchAlmacenPickerStyle">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="Margin" Value="10,5" />
+            <Setter Property="Title" Value="Seleccionar Almacén" />
+            <!-- Similar al Placeholder en Entry -->
+        </Style>
+
+        <Style TargetType="Button" x:Key="SearchButtonStyle">
+            <Setter Property="Margin" Value="50,0,50,15" />
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout>
+
+
+        <!-- Contenedor con Grid para el Picker y el Botón Buscar -->
+        <Grid ColumnDefinitions="2.5*, Auto" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+            <!-- Picker de Almacén en la primera columna -->
+            <Picker x:Name="almacenPicker"
+                    Title="Seleccionar Almacén"
+                    ItemDisplayBinding="{Binding Descripcion}"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"
+                    Margin="0,20,15,0"
+                    HeightRequest="40"
+                    Grid.Column="0"/>
+
+            <!-- Botón Buscar en la segunda columna -->
+            <Button x:Name="btnBuscar"
+                    Text="Buscar"
+                    FontSize="Medium"
+                    BackgroundColor="#007ACC" 
+                TextColor="White"
+                    HeightRequest="45"
+                    WidthRequest="98"
+                    CornerRadius="22"
+                HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="5,20,0,0"
+                    Clicked="BuscarOperacion_Clicked"
+                    Grid.Column="1"/>
+        </Grid>
+
+        <!-- Botón "Agregar Nota" en la siguiente línea en el centro -->
+        <Button x:Name="btnAgregar"
+                Text="Agregar Nota"
+                FontSize="Medium"
+                BackgroundColor="#28a745" 
+            TextColor="White"
+                HeightRequest="45"
+                WidthRequest="141"
+                CornerRadius="22"
+            HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,0.5,0,4"
+                Clicked="AgregarOperacion_Clicked"/>
+
+        <ListView x:Name="listaNotasListView" HasUnevenRows="True"  CachingStrategy="RecycleElement" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Eliminar" Clicked="EliminarMenuItem_Clicked" CommandParameter="{Binding .}" />
+                        </ViewCell.ContextActions>
+
+                        <!-- Contenido del elemento de la lista (tu diseño actual) -->
+                        <Frame  BorderColor="#C0C0C0"  BackgroundColor="{Binding RowColor}" HasShadow="False"   Margin="15,10,10,10" >
+
+                            <Grid  >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Nombre del producto -->
+                                <Label FontSize="15" Text="{Binding CANUMDOC}" VerticalOptions="Start" Margin="0,0,0,30" />
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                    <!-- Primer StackLayout -->
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                        <Label FontSize="14" Text="{Binding PRVCNOMBRE}"  VerticalOptions="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <Label FontSize="15" Text="{Binding Cantidad, StringFormat='Cantidad: {0}'}" VerticalOptions="End"  />
+                            </Grid>
+                        </Frame>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+
+</ContentPage>
