@@ -115,6 +115,9 @@
 	  <Compile Update="Views\BuscarProductosMayPage.xaml.cs">
 	    <DependentUpon>BuscarProductosMayPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\ListaIngreoInventarioPage.xaml.cs">
+	    <DependentUpon>ListaIngreoInventarioPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\ScanBarCodeMayPage.xaml.cs">
 	    <DependentUpon>ScanBarCodeMayPage.xaml</DependentUpon>
 	  </Compile>
@@ -146,6 +149,9 @@
 	  <MauiXaml Update="Views\AboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\BuscarProductosInventarioPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\BuscarProductosMayPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -156,6 +162,15 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ListadoNotaSalidaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ListaIngreoInventarioPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RegistroInventarioPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ScanBarCodeInventarioPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ScanBarCodeMayPage.xaml">

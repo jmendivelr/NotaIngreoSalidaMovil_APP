@@ -46,7 +46,7 @@ public partial class BuscarProductosMayPage : ContentPage
         //string codigoAlmacen = almacenSeleccionado.Codigo; // Usar el código del almacén seleccionado
 
         // Construir la URL de la API con la descripción y el código del almacén
-        string apiUrl = $"http://192.168.1.152:8022/api/Inventario/listaArticulo?descripcion={busqueda}&alm={_codigoAlmacen}";
+        string apiUrl = $"http://192.168.1.3:8022/api/Inventario/listaArticulo?descripcion={busqueda}&alm={_codigoAlmacen}";
 
         using (HttpClient httpClient = new HttpClient())
         {
@@ -81,7 +81,7 @@ public partial class BuscarProductosMayPage : ContentPage
             catch (Exception ex)
             {
                 // Manejar excepciones de red, deserialización, etc.
-                await DisplayAlert("Error", $"No se pudo cargar los artículos: {ex.Message}", "OK");
+                await DisplayAlert("Error", $"No se pudo cargar los artículos: Error al conectar con Servidor, verificar conexión.", "OK");
             }
         }
 

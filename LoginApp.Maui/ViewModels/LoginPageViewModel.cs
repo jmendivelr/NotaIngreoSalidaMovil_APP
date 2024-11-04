@@ -53,7 +53,7 @@ public partial class LoginPageViewModel : ObservableObject
                 }
                 else
                 {
-                    await Shell.Current.DisplayAlert("Error", "All fields required", "Ok");
+                    await Shell.Current.DisplayAlert("Error", "Ingresar credenciales.", "Ok");
                     return;
                 }
             }
@@ -66,7 +66,7 @@ public partial class LoginPageViewModel : ObservableObject
         }
         catch (Exception ex)
         {
-            await Shell.Current.DisplayAlert("Error", ex.Message, "Ok");
+            await Shell.Current.DisplayAlert("Error", "Error al conectar con Servidor, verificar conexión.", "Ok");
             return;
         }
 

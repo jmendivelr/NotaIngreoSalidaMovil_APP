@@ -1,18 +1,21 @@
 using LoginApp.Maui.ViewModels;
+using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using Newtonsoft.Json;
 
 namespace LoginApp.Maui.Views;
 
-
-public partial class BuscarProductosPage : ContentPage
+public partial class BuscarProductosInventarioPage : ContentPage
 {
-    private ObservableCollection<ProductoViewModel> resultados = new ObservableCollection<ProductoViewModel>();
+	//public BuscarProductosInventarioPage()
+	//{
+	//	InitializeComponent();
+	//}
+    private ObservableCollection<ProductoInventarioViewModel> resultados = new ObservableCollection<ProductoInventarioViewModel>();
     //private ObservableCollection<AlmacenViewModel> almacenes;
     private string _codigoAlmacen;
     //private ObservableCollection<ProductoMayViewModel> productos;
-    public BuscarProductosPage(string codigoAlmacen)
+    public BuscarProductosInventarioPage(string codigoAlmacen)
     {
         InitializeComponent();
         _codigoAlmacen = codigoAlmacen;
@@ -55,7 +58,7 @@ public partial class BuscarProductosPage : ContentPage
                 string jsonResult = await httpClient.GetStringAsync(apiUrl);
 
                 // Deserializar la respuesta completa en ApiResponseProductoMayViewModel
-                var apiResponse = JsonConvert.DeserializeObject<ApiResponseProductoViewModel>(jsonResult);
+                var apiResponse = JsonConvert.DeserializeObject<ApiResponseProductoInventarioViewModel>(jsonResult);
 
                 // Verificar que el estado interno sea exitoso (InternalStatus = 1)
                 if (apiResponse.InternalStatus == 1 && apiResponse.Data != null)
@@ -66,7 +69,7 @@ public partial class BuscarProductosPage : ContentPage
                     }
                     // Deserializar la lista de productos
 
-                    var resultados = new ObservableCollection<ProductoViewModel>(apiResponse.Data);
+                    var resultados = new ObservableCollection<ProductoInventarioViewModel>(apiResponse.Data);
 
                     // Aquí puedes mostrar los resultados en un ListView o cualquier otro control
                     resultadosLista.ItemsSource = resultados;
@@ -94,13 +97,13 @@ public partial class BuscarProductosPage : ContentPage
     }
     private void SeleccionarProducto_Clicked(object sender, EventArgs e)
     {
-        ProductoViewModel productoSeleccionado = resultadosLista.SelectedItem as ProductoViewModel;
+        ProductoInventarioViewModel productoSeleccionado = resultadosLista.SelectedItem as ProductoInventarioViewModel;
 
         if (productoSeleccionado != null)
         {
             Debug.WriteLine($"Enviando Producto Seleccionado: {productoSeleccionado.descripcion}");
 
-            MessagingCenter.Send(this, "ProductoSeleccionado", productoSeleccionado);
+            MessagingCenter.Send(this, "ProductoSeleccionadoInventario", productoSeleccionado);
 
             Navigation.PopAsync();
         }

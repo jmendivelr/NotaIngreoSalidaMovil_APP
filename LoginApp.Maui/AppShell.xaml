@@ -26,6 +26,9 @@
         <ShellContent Title="Nota de Salida" ContentTemplate="{DataTemplate views:ListadoNotaSalidaPage}">
             
         </ShellContent>
+        <ShellContent Title="Ingreso Inventario" ContentTemplate="{DataTemplate views:ListaIngreoInventarioPage}">
+            
+        </ShellContent>
         <!--<ShellContent Title="Acerca de"  ContentTemplate="{DataTemplate views:AboutPage}"/>-->
     </FlyoutItem>
 

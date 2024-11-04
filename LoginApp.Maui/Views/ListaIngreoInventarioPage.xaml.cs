@@ -1,19 +1,27 @@
 using LoginApp.Maui.ViewModels;
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
-using static LoginApp.Maui.Views.ListadoNotaSalidaPage;
+
 namespace LoginApp.Maui.Views;
 
-public partial class ListadoNotaSalidaPage : ContentPage
+public partial class ListaIngreoInventarioPage : ContentPage
 {
     private ObservableCollection<IngresoItem> _ingresoItems;
-    public ObservableCollection<AlmacenViewModel> almacenes;
-    public ListadoNotaSalidaPage()
-    {
-        InitializeComponent();
-        CargarAlmacenes(); // Llamada para cargar los almacenes
-        //CargarNotasIngreso(); // Llamada al método para cargar los datos al inicializar la vista.
 
+    public ObservableCollection<AlmacenViewModel> almacenes;
+    public ListaIngreoInventarioPage()
+	{
+		InitializeComponent();
+        CargarAlmacenes(); // Llamada para cargar los almacenes
+    }
+    private void EliminarMenuItem_Clicked(object sender, EventArgs e)
+    {
+        //if (sender is MenuItem menuItem && menuItem.CommandParameter is ProductoViewModel producto)
+        //{
+        //    // Aquí debes eliminar el producto de tu listaProductos
+        //    listaProductos.Remove(producto);
+        //    ActualizarTotalCantidades(); // Actualiza el total después de eliminar un producto
+        //}
     }
     private async void CargarAlmacenes()
     {
@@ -51,6 +59,10 @@ public partial class ListadoNotaSalidaPage : ContentPage
             }
         }
     }
+    private void BuscarOperacion_Clicked(object sender, EventArgs e)
+    {
+        CargarNotasIngreso();
+    }
     private void AgregarOperacion_Clicked(object sender, EventArgs e)
 
     {
@@ -60,13 +72,63 @@ public partial class ListadoNotaSalidaPage : ContentPage
         if (almacenSeleccionado != null)
         {
             // Pasar el `Codigo` del almacén a la nueva página
-            Navigation.PushAsync(new VentaRapidaPage(almacenSeleccionado.Codigo));
+            Navigation.PushAsync(new RegistroInventarioPage(almacenSeleccionado.Codigo));
         }
         else
         {
             DisplayAlert("Error", "Debe seleccionar un almacén antes de agregar una nota.", "OK");
         }
 
+    }
+
+    private async void CargarNotasIngreso()
+    {
+        //try
+        //{
+        //    var almacenSeleccionado = almacenPicker.SelectedItem as AlmacenViewModel;
+        //    var txtAlmacen_ = "";
+        //    if (almacenSeleccionado != null)
+        //    {
+        //        // Pasar el `Codigo` del almacén a la nueva página
+        //        txtAlmacen_ = almacenSeleccionado.Codigo;
+        //    }
+        //    else
+        //    {
+        //        DisplayAlert("Error", "Debe seleccionar un almacén antes de agregar una nota.", "OK");
+        //        return;
+        //    }
+
+
+        //    // URL de la API
+        //    string url = $"http://192.168.1.3:8022/api/Inventario/ListadoNotas?CAALMA={txtAlmacen_}&CATD=SA";
+
+        //    // Crear cliente HTTP
+        //    HttpClient client = new HttpClient();
+        //    var response = await client.GetStringAsync(url);
+
+        //    // Parsear la respuesta a un objeto
+        //    var result = JsonConvert.DeserializeObject<RootObject>(response);
+
+        //    if (result.InternalStatus == 1)
+        //    {
+        //        _ingresoItems = new ObservableCollection<IngresoItem>(result.Data);
+        //        listaNotasListView.ItemsSource = _ingresoItems; // Asignar la lista de datos al ListView
+        //    }
+        //    else
+        //    {
+        //        await DisplayAlert("Error", "No se visualiza Notas ingresadas el dia de hoy.", "OK");
+        //    }
+        //}
+        //catch (Exception ex)
+        //{
+        //    await DisplayAlert("Error", ex.Message, "OK");
+        //}
+    }
+
+    public class RootObject
+    {
+        public int InternalStatus { get; set; }
+        public List<IngresoItem> Data { get; set; }
     }
     public class IngresoItem
     {
@@ -92,70 +154,6 @@ public partial class ListadoNotaSalidaPage : ContentPage
 
         // Fecha del Documento
         public DateTime CAFECDOC { get; set; }
-    }
-
-    private async void CargarNotasIngreso()
-    {
-        try
-        {
-            var almacenSeleccionado = almacenPicker.SelectedItem as AlmacenViewModel;
-            var txtAlmacen_ = "";
-            if (almacenSeleccionado != null)
-            {
-                // Pasar el `Codigo` del almacén a la nueva página
-                txtAlmacen_=almacenSeleccionado.Codigo;
-            }
-            else
-            {
-                DisplayAlert("Error", "Debe seleccionar un almacén antes de agregar una nota.", "OK");
-                return;
-            }
-
-
-            // URL de la API
-            string url = $"http://192.168.1.3:8022/api/Inventario/ListadoNotas?CAALMA={txtAlmacen_}&CATD=SA";
-
-            // Crear cliente HTTP
-            HttpClient client = new HttpClient();
-            var response = await client.GetStringAsync(url);
-
-            // Parsear la respuesta a un objeto
-            var result = JsonConvert.DeserializeObject<RootObject>(response);
-
-            if (result.InternalStatus == 1)
-            {
-                _ingresoItems = new ObservableCollection<IngresoItem>(result.Data);
-                listaNotasListView.ItemsSource = _ingresoItems; // Asignar la lista de datos al ListView
-            }
-            else
-            {
-                await DisplayAlert("Error", "No se visualiza Notas ingresadas el dia de hoy.", "OK");
-            }
-        }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Error", "Error al conectar con Servidor, verificar conexión.", "OK");
-        }
-    }
-    // Evento Clicked para el Botón "Buscar"
-    private void BuscarOperacion_Clicked(object sender, EventArgs e)
-    {
-        CargarNotasIngreso();
-    }
-
-    private void EliminarMenuItem_Clicked(object sender, EventArgs e)
-    {
-        //if (sender is MenuItem menuItem && menuItem.CommandParameter is ProductoViewModel producto)
-        //{
-        //    // Aquí debes eliminar el producto de tu listaProductos
-        //    listaProductos.Remove(producto);
-        //    ActualizarTotalCantidades(); // Actualiza el total después de eliminar un producto
-        //}
-    }
-    public class RootObject
-    {
-        public int InternalStatus { get; set; }
-        public List<IngresoItem> Data { get; set; }
     }
 
 }

@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Fuentes\\AppnotaVentas\\APP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\ventarapidapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\ventarapidapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\ventarapidamaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\ventarapidamaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\registroinventariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\registroinventariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\listaingreoinventariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\listaingreoinventariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\listadonotasalidapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\listadonotasalidapage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\listadonotaingresopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\listadonotaingresopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\buscarproductospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\buscarproductospage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\buscarproductosmaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\buscarproductosmaypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\buscarproductosinventariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\buscarproductosinventariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\viewmodels\\loginpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\views\\listaingreoinventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\views\\listaingreoinventariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|c:\\fuentes\\appnotaventas\\app\\loginapp.maui\\viewmodels\\productoinventarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CC2200B-A2F0-4F4D-8544-2FD2B5894325}|LoginApp.Maui\\LoginApp.Maui.csproj|solutionrelative:loginapp.maui\\viewmodels\\productoinventarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaRapidaPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\VentaRapidaPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\VentaRapidaPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\VentaRapidaPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\VentaRapidaPage.xaml.cs",
+              "ViewState": "AgIAAHACAAAAAAAAAAAuwHICAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:58:36.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VentaRapidaMayPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\VentaRapidaMayPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\VentaRapidaMayPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\VentaRapidaMayPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\VentaRapidaMayPage.xaml.cs",
+              "ViewState": "AgIAABMDAAAAAAAAAAAuwA8DAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:58:05.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegistroInventarioPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\RegistroInventarioPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\RegistroInventarioPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\RegistroInventarioPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\RegistroInventarioPage.xaml.cs",
+              "ViewState": "AgIAAIMCAAAAAAAAAAAuwI4CAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:57:50.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListadoNotaSalidaPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListadoNotaSalidaPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\ListadoNotaSalidaPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListadoNotaSalidaPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\ListadoNotaSalidaPage.xaml.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwIgAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:57:28.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListadoNotaIngresoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListadoNotaIngresoPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\ListadoNotaIngresoPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListadoNotaIngresoPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\ListadoNotaIngresoPage.xaml.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAuwIkAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:57:06.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BuscarProductosPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\BuscarProductosPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\BuscarProductosPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\BuscarProductosPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\BuscarProductosPage.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAuwFIAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:57:00.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BuscarProductosMayPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\BuscarProductosMayPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\BuscarProductosMayPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\BuscarProductosMayPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\BuscarProductosMayPage.xaml.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAuwFMAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:56:54.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BuscarProductosInventarioPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\BuscarProductosInventarioPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\BuscarProductosInventarioPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\BuscarProductosInventarioPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\BuscarProductosInventarioPage.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwFUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:54:41.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListaIngreoInventarioPage.xaml.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAuwHsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:53:18.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ListaIngreoInventarioPage.xaml",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml",
+              "RelativeToolTip": "LoginApp.Maui\\Views\\ListaIngreoInventarioPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T04:53:14.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductoInventarioViewModel.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\ViewModels\\ProductoInventarioViewModel.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\ViewModels\\ProductoInventarioViewModel.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\ViewModels\\ProductoInventarioViewModel.cs",
+              "RelativeToolTip": "LoginApp.Maui\\ViewModels\\ProductoInventarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:53:02.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Services\\LoginService.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\Services\\LoginService.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\Services\\LoginService.cs",
+              "RelativeToolTip": "LoginApp.Maui\\Services\\LoginService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAawBkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:41:29.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginPageViewModel.cs",
+              "DocumentMoniker": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeDocumentMoniker": "LoginApp.Maui\\ViewModels\\LoginPageViewModel.cs",
+              "ToolTip": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\ViewModels\\LoginPageViewModel.cs",
+              "RelativeToolTip": "LoginApp.Maui\\ViewModels\\LoginPageViewModel.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEQAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T04:40:40.31Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

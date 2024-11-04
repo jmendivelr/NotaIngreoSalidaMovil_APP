@@ -29212,11 +29212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Fuentes\\app nota de venta\\APPv2\\LoginApp.Maui\\LoginApp.Maui.csproj",
+      "projectUniqueName": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\LoginApp.Maui.csproj",
       "projectName": "LoginApp.Maui",
-      "projectPath": "C:\\Fuentes\\app nota de venta\\APPv2\\LoginApp.Maui\\LoginApp.Maui.csproj",
+      "projectPath": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\LoginApp.Maui.csproj",
       "packagesPath": "C:\\Users\\JAMER\\.nuget\\packages\\",
-      "outputPath": "C:\\Fuentes\\app nota de venta\\APPv2\\LoginApp.Maui\\obj\\",
+      "outputPath": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

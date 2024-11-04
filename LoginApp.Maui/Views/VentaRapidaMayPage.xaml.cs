@@ -102,7 +102,7 @@ public partial class VentaRapidaMayPage : ContentPage
 
     private async void CargarPreciosDesdeAPIScan(string codigoProducto)
     {
-        string apiUrl = $"http://192.168.1.152:8022/api/Inventario/buscarArticulo?codbarras={codigoProducto}&alm={_codigoAlmacen}";
+        string apiUrl = $"http://192.168.1.3:8022/api/Inventario/buscarArticulo?codbarras={codigoProducto}&alm={_codigoAlmacen}";
 
         using (HttpClient httpClient = new HttpClient())
         {
@@ -153,7 +153,7 @@ public partial class VentaRapidaMayPage : ContentPage
             catch (Exception ex)
             {
                 // Manejar excepciones de red, deserialización, etc.
-                await DisplayAlert("Error", $"No se pudo cargar los artículos: {ex.Message}", "OK");
+                await DisplayAlert("Error", $"No se pudo cargar los artículos: Error al conectar con Servidor, verificar conexión.", "OK");
             }
         }
         ActualizarTotalCantidades();
@@ -440,7 +440,7 @@ public partial class VentaRapidaMayPage : ContentPage
             using (HttpClient httpClient = new HttpClient())
             {
                 // URL de tu API
-                string apiUrl = "http://192.168.1.152:8022/api/Notas/procesarNota";
+                string apiUrl = "http://192.168.1.3:8022/api/Notas/procesarNota";
 
                 // Configurar la solicitud HTTP
                 var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
@@ -575,7 +575,7 @@ public partial class VentaRapidaMayPage : ContentPage
             using (HttpClient httpClient = new HttpClient())
             {
                 // URL de tu API
-                string apiUrl = "http://192.168.1.152:8022/api/Inventario/listatipodoc";
+                string apiUrl = "http://192.168.1.3:8022/api/Inventario/listatipodoc";
 
                 // Realizar la solicitud GET
                 HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
@@ -614,7 +614,7 @@ public partial class VentaRapidaMayPage : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error", $"No se pudo cargar los documentos: {ex.Message}", "OK");
+            await DisplayAlert("Error", $"No se pudo cargar los documentos: Error al conectar con Servidor, verificar conexión.", "OK");
         }
     }
     // Evento que se ejecuta cuando cambia el texto de búsqueda
@@ -676,7 +676,7 @@ public partial class VentaRapidaMayPage : ContentPage
             using (HttpClient httpClient = new HttpClient())
             {
                 // URL de la API con el parámetro de búsqueda
-                string apiUrl = $"http://192.168.1.152:8022/api/Inventario/listaProveedores?descripcion={busqueda}%25";
+                string apiUrl = $"http://192.168.1.3:8022/api/Inventario/listaProveedores?descripcion={busqueda}%25";
 
                 // Realizar la solicitud GET
                 HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
@@ -748,7 +748,7 @@ public partial class VentaRapidaMayPage : ContentPage
         {
             using (HttpClient httpClient = new HttpClient())
             {
-                string apiUrl = "http://192.168.1.152:8022/api/Inventario/listatransacingreso";
+                string apiUrl = "http://192.168.1.3:8022/api/Inventario/listatransacingreso";
                 HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
 
                 if (response.IsSuccessStatusCode)
@@ -781,7 +781,7 @@ public partial class VentaRapidaMayPage : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error", $"No se pudo cargar las transacciones: {ex.Message}", "OK");
+            await DisplayAlert("Error", $"No se pudo cargar las transacciones: Error al conectar con Servidor, verificar conexión.", "OK");
         }
     }
     private void OnTransaccionSearchBarTextChanged(object sender, TextChangedEventArgs e)

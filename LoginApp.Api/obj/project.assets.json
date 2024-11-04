@@ -3917,11 +3917,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Fuentes\\app nota de venta\\APPv2\\LoginApp.Api\\LoginApp.Api.csproj",
+      "projectUniqueName": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Api\\LoginApp.Api.csproj",
       "projectName": "LoginApp.Api",
-      "projectPath": "C:\\Fuentes\\app nota de venta\\APPv2\\LoginApp.Api\\LoginApp.Api.csproj",
+      "projectPath": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Api\\LoginApp.Api.csproj",
       "packagesPath": "C:\\Users\\JAMER\\.nuget\\packages\\",
-      "outputPath": "C:\\Fuentes\\app nota de venta\\APPv2\\LoginApp.Api\\obj\\",
+      "outputPath": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

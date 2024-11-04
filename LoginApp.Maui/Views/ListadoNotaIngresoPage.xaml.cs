@@ -18,7 +18,7 @@ public partial class ListadoNotaIngresoPage : ContentPage
     }
     private async void CargarAlmacenes()
     {
-        string apiUrl = "http://192.168.1.152:8022/api/Inventario/listaalmacenes";
+        string apiUrl = "http://192.168.1.3:8022/api/Inventario/listaalmacenes";
 
         using (HttpClient httpClient = new HttpClient())
         {
@@ -48,7 +48,7 @@ public partial class ListadoNotaIngresoPage : ContentPage
             catch (Exception ex)
             {
                 // Manejar excepciones de red, deserialización, etc.
-                await DisplayAlert("Error", $"No se pudo cargar los almacenes: {ex.Message}", "OK");
+                await DisplayAlert("Error", $"No se pudo cargar los almacenes: Error al conectar con Servidor, verificar conexión.", "OK");
             }
         }
     }
@@ -114,7 +114,7 @@ public partial class ListadoNotaIngresoPage : ContentPage
 
 
             // URL de la API
-            string url = $"http://192.168.1.152:8022/api/Inventario/ListadoNotas?CAALMA={txtAlmacen_}&CATD=NI";
+            string url = $"http://192.168.1.3:8022/api/Inventario/ListadoNotas?CAALMA={txtAlmacen_}&CATD=NI";
 
             // Crear cliente HTTP
             HttpClient client = new HttpClient();
@@ -135,7 +135,7 @@ public partial class ListadoNotaIngresoPage : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error", ex.Message, "OK");
+            await DisplayAlert("Error", "Error al conectar con Servidor, verificar conexión.", "OK");
         }
     }
     // Evento Clicked para el Botón "Buscar"

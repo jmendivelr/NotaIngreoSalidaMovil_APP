@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5IhAome9BFQ=",
+  "dgSpecHash": "aGKqf/8febA=",
   "success": true,
-  "projectFilePath": "C:\\Fuentes\\app nota de venta\\APPv2\\LoginApp.Maui\\LoginApp.Maui.csproj",
+  "projectFilePath": "C:\\Fuentes\\AppnotaVentas\\APP\\LoginApp.Maui\\LoginApp.Maui.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JAMER\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\JAMER\\.nuget\\packages\\freshmvvm.maui\\0.0.4\\freshmvvm.maui.0.0.4.nupkg.sha512",

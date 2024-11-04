@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.Maui.Views.RegistroInventarioPage"
+             Title="Ingreso Inventario">
+
+    <StackLayout>
+        <!-- Botón para escanear código de barras con Xamarin.Essentials -->
+
+
+        <!--<Label Text="Venta Rapida" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,10"/>-->
+        <ContentView x:Name="popupViewFinalizaVenta" IsVisible="False" BackgroundColor="Transparent" Padding="10">
+            <!-- Contenido de la "ventana emergente" -->
+            <StackLayout>
+                <Button Text="Cancelar" FontSize="Medium" Clicked="CancelarPopupFinalizaVenta" />
+               
+                <!-- Caja de texto para el Correlativo -->
+                <VerticalStackLayout Padding="10">
+                    <!-- Etiqueta para indicar que es el campo de detalles -->
+                    <Label Text="Ingresar detalle" />
+
+                    <!-- Caja de texto grande para detalles (Editor) -->
+                    <Editor x:Name="detallesEditor"
+            Placeholder="Escriba los detalles aquí..."
+            AutoSize="TextChanges"
+            HeightRequest="150"
+            Margin="0,10,0,0" />
+                </VerticalStackLayout>
+                <Button Text="Guardar" FontSize="Medium" Clicked="CerrarPopupFinalizaVenta" />
+            </StackLayout>
+        </ContentView>
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnAgregar" Text="Agregar Producto" Clicked="AgregarProducto_Clicked" 
+            HorizontalOptions="Start" VerticalOptions="Start"
+            Margin="15,10,0,0" FontSize="Micro"/>
+
+            <!-- Este espacio en blanco es solo para dar un espacio entre los botones -->
+            <!--<BoxView WidthRequest="10" BackgroundColor="Red" />-->
+
+            <Button x:Name="btnScan" FontSize="Micro"  Text="Escanear Código" Clicked="EscanearCodigoBarras_Clicked" 
+            HorizontalOptions="End" VerticalOptions="Start"
+            Margin="10,10,10,0" />
+        </StackLayout>
+
+        <ListView x:Name="listaProductosListView" HasUnevenRows="True"  CachingStrategy="RecycleElement" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Eliminar" Clicked="EliminarMenuItem_Clicked" CommandParameter="{Binding .}" />
+                        </ViewCell.ContextActions>
+
+                        <!-- Contenido del elemento de la lista (tu diseño actual) -->
+                        <Frame  BorderColor="#C0C0C0"  BackgroundColor="{Binding RowColor}" HasShadow="False"   Margin="15,10,10,10" >
+                            <Grid  >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <!--<RowDefinition Height="Auto"/>-->
+                                    <!--<RowDefinition Height="Auto"/>-->
+                                </Grid.RowDefinitions>
+
+                                <!-- Nombre del producto -->
+                                <Label FontSize="15" Text="{Binding descripcion}"  LineHeight="0.7" VerticalOptions="Start" Margin="0,0,0,30" />
+                                <!-- Espacio entre los dos StackLayouts -->
+                                <StackLayout HeightRequest="60" />
+                                <!-- Este StackLayout vacío actuará como un espaciador -->
+
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10" Margin="0,30,0,0">
+                                    <!-- Primer StackLayout -->
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                        <Label FontSize="14" Text="Cant:" VerticalOptions="Center"/>
+                                        <Entry FontSize="14" Text="{Binding Cantidad_input}" Keyboard="Numeric" WidthRequest="45" VerticalOptions="CenterAndExpand" />
+                                        <!--<Label FontSize="14" Text="Stock:" Margin="30,0,0,0" VerticalOptions="Center"/>
+                                        <Label FontSize="14" Text="{Binding Cantidad_Salida}" VerticalOptions="Center" Margin="0,0,0,0"/>-->
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="finalizarVentaButton" Text="Finalizar Nota"   Margin="50,0,50,15" FontSize="Medium" Clicked="FinalizarVenta_Clicked" />
+    </StackLayout>
+</ContentPage>

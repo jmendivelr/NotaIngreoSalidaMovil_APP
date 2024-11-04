@@ -13,6 +13,7 @@ namespace LoginApp.Maui
             Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
             Routing.RegisterRoute(nameof(ListadoNotaIngresoPage), typeof(ListadoNotaIngresoPage));
             Routing.RegisterRoute(nameof(ListadoNotaSalidaPage), typeof(ListadoNotaSalidaPage));
+            Routing.RegisterRoute(nameof(ListaIngreoInventarioPage), typeof(ListaIngreoInventarioPage));
         }
     }
 }
