@@ -73,7 +73,7 @@
                                     <!-- Primer StackLayout -->
                                     <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                                         <Label FontSize="14" Text="Cant:" VerticalOptions="Center"/>
-                                        <Entry FontSize="14" Text="{Binding Cantidad_input}" Keyboard="Numeric" WidthRequest="45" VerticalOptions="CenterAndExpand" />
+                                        <Entry FontSize="14" Text="1" Keyboard="Numeric" WidthRequest="45" VerticalOptions="CenterAndExpand" IsEnabled="False" />
                                         <!--<Label FontSize="14" Text="Stock:" Margin="30,0,0,0" VerticalOptions="Center"/>
                                         <Label FontSize="14" Text="{Binding Cantidad_Salida}" VerticalOptions="Center" Margin="0,0,0,0"/>-->
                                     </StackLayout>
@@ -84,6 +84,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="finalizarVentaButton" Text="Finalizar Nota"   Margin="50,0,50,15" FontSize="Medium" Clicked="FinalizarVenta_Clicked" />
+        <Button x:Name="finalizarVentaButton" Text="Finalizar Operación"   Margin="50,0,50,15" FontSize="Medium" Clicked="FinalizarVenta_Clicked" />
     </StackLayout>
 </ContentPage>

@@ -390,7 +390,7 @@ public partial class RegistroInventarioPage : ContentPage
             {
                 DFSECUEN = Secuencia, // Secuencia del detalle (debe obtenerse de algún lugar)
                 DFCODIGO = detalle.Codigo, // Código del producto
-                DFCANTID = detalle.Cantidad_input, // Cantidad
+                DFCANTID = 1, // Cantidad
                 DFPREC = 0, // Precio de venta por unidad
                 Almacen = detalle.Almacen
             };
